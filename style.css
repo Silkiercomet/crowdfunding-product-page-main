@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
+
+html {
+  box-sizing: border-box;
+  font-family: "Commissioner", sans-serif;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.thanks-card,
+.back-tiers {
+  display: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 6.875rem;
+  align-items: center;
+  padding: 0 5rem;
+}
+nav .right ul {
+  list-style: none;
+  display: flex;
+}
+nav .left {
+  padding-left: 1rem;
+}
+nav .right ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav .right ul li {
+  padding: 0 1rem;
+}
+header {
+  height: calc(100vh - 250px);
+  background-image: url(images/image-hero-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.wrapper {
+  max-width: 43.75rem;
+  margin: 0 auto;
+  margin-top: -6.75rem;
+  margin-bottom: 5rem;
+}
+
+/* intro */
+
+.intro {
+  position: relative;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro p {
+  margin-top: 0;
+}
+.mastercraft {
+  position: absolute;
+  top: -30px;
+}
+.intro .options {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+/* intro */
+
+/* progress */
+.progress {
+  padding: 2.5rem 2rem;
+  margin: 1.5rem 0;
+}
+.amounts {
+  display: flex;
+  align-items: flex-start;
+}
+.amount-backers {
+  border-style: none solid none solid;
+  border-color: hsla(0, 0%, 48%, 0.1);
+  padding: 0 3rem;
+}
+.amount-backers p,
+.amount-money p,
+.amount-time p,
+.amount-backers h1,
+.amount-money h1,
+.amount-time h1 {
+  margin-top: 0;
+}
+.amount-backers h1,
+.amount-money h1,
+.amount-time h1 {
+  margin-bottom: 0.4rem;
+  font-size: 2rem;
+}
+.progress-bar {
+  width: 100%;
+  padding: 1.5rem 1rem;
+}
+/* slider */
+
+/* The slider itself */
+input[type="range"].styled-slider {
+  width: 100%;
+  height: 1.3em;
+  -webkit-appearance: none;
+  border-radius: 1rem;
+}
+
+/*progress support*/
+input[type="range"].styled-slider.slider-progress {
+  --range: calc(var(--max) - var(--min));
+  --ratio: calc((var(--value) - var(--min)) / var(--range));
+  --sx: calc(0.5 * 0.8em + var(--ratio) * (100% - 0.8em));
+}
+
+input[type="range"].styled-slider:focus {
+  outline: none;
+}
+
+/*webkit*/
+input[type="range"].styled-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type="range"].styled-slider::-webkit-slider-runnable-track {
+  height: 1em;
+  border-radius: 0.5em;
+  background: hsl(0, 0%, 48%);
+  border: none;
+  box-shadow: none;
+}
+input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track {
+  background: linear-gradient(to right, hsl(176, 50%, 47%), hsl(176, 50%, 47%))
+      0 / var(--sx) 100% no-repeat,
+    hsla(0, 0%, 48%, 0.288);
+}
+
+/*mozilla*/
+input[type="range"].styled-slider::-moz-range-thumb {
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 1em;
+  background: white;
+  border: none;
+  box-shadow: 0 0 2px black;
+}
+
+input[type="range"].styled-slider::-moz-range-track {
+  height: 1em;
+  border-radius: 0.5em;
+  background: hsl(229, 57%, 11%);
+  border: none;
+  box-shadow: none;
+}
+
+input[type="range"].styled-slider.slider-progress::-moz-range-track {
+  background: linear-gradient(to right, hsl(176, 50%, 47%), hsl(176, 50%, 47%))
+      0 / var(--sx) 100% no-repeat,
+    hsl(0, 0%, 48%);
+}
+
+/*ms*/
+input[type="range"].styled-slider::-ms-fill-upper {
+  background: transparent;
+  border-color: transparent;
+}
+
+input[type="range"].styled-slider::-ms-fill-lower {
+  background: transparent;
+  border-color: transparent;
+}
+
+input[type="range"].styled-slider::-ms-thumb {
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 1em;
+  background: white;
+  border: none;
+  box-shadow: 0 0 2px black;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+input[type="range"].styled-slider::-ms-track {
+  height: 1em;
+  border-radius: 0.5em;
+  background: hsl(229, 57%, 11%);
+  border: none;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+input[type="range"].styled-slider.slider-progress::-ms-fill-lower {
+  height: 1em;
+  border-radius: 0.5em 0 0 0.5em;
+  margin: -undefined 0 -undefined -undefined;
+  background: linear-gradient(to right, hsl(176, 50%, 47%), hsl(176, 50%, 47%))
+      0 / var(--sx) 100% no-repeat,
+    hsl(0, 0%, 48%);
+  border: none;
+  border-right-width: 0;
+}
+/* slider */
+
+/* progress */
+
+/* progress */
+
+.about {
+    padding: 1.5rem 2rem;
+}
+.details,.amount-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.amount-left h1{
+    padding-right: 0.4rem;
+    font-size: 2.1rem;
+}
+
+
+/* progress */
+/* utilities */
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: -3px 5px 15px 5px rgba(0, 0, 0, 0.13);
+  box-shadow: -3px 5px 15px 5px rgba(0, 0, 0, 0.05);
+}
+.rewards > .card{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid hsla(0, 0%, 48%, 0.418);
+    margin: 1rem 0;
+    padding: 1.5rem;
+}
+p, .amount-left span {
+  color: hsl(0, 0%, 48%);
+}
+.btn {
+  background-color: hsl(176, 50%, 47%);
+  color: white;
+  padding: 1rem 1.8rem;
+  text-decoration: none;
+  border: 0;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: 400ms;
+}
+.btn:hover{
+    background-color: hsl(176, 72%, 28%);
+}
+.px-2 {
+  padding: 0 3rem;
+}
+.ple-amount{
+    color: hsl(176, 50%, 47%);
+    font-weight: 500;
+}
+.choose-ple{
+    line-height: 2rem;
+}
+.out{
+    opacity: 0.4;
+    cursor: default;
+}
+.btn-out{
+    background-color: hsl(0, 0%, 48%);
+    cursor: default;
+}
+.btn-out:hover{
+    background-color: hsl(0, 0%, 48%);
+}
+/* utilities */

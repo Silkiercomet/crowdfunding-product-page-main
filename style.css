@@ -12,11 +12,87 @@ html {
 body {
   padding: 0;
   margin: 0;
+  position: relative;
+
 }
+/* cards */
 .thanks-card,
 .back-tiers {
   display: none;
 }
+.thanks-card{
+  position: fixed;
+  transform: translate(120%, 50%);
+  z-index: 1;
+  max-width: 400px;
+  padding: 2rem;
+  text-align: center;
+}
+.thanks-card p{
+  padding:0 0 1.5rem 0;
+  line-height: 1.8rem;
+  font-size: 0.8rem;
+}
+.back-tiers{
+  
+  position: absolute;
+  transform: translate(46.5%, 40%);
+  z-index: 1;
+  max-width: 700px;
+}
+.back-tiers .wrapper{
+  background-color: white;
+  padding: 1.5rem 2rem;
+}
+.upper-card{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.card-container .card{
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid hsl(0, 0%, 48%);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin: 1rem 0;
+  padding: 1.5rem  ;
+}
+.upper-card .right{
+  padding: 0 1rem;
+}
+.upper-card p{
+  line-height: 1.5rem;
+}
+.header-card{
+  display: flex;
+  justify-content: space-between;
+}
+.order-det, .pledge-left{
+  display: flex;
+  align-items: center;
+}
+.upper-card .right h3{
+  margin: 0;
+  padding-right: 0.4rem;
+}
+.order-det span{
+  color: hsl(176, 50%, 47%);
+  font-weight: 500;
+}
+.down-card{
+  display: flex;
+  justify-content: space-between;
+  padding:1rem ;
+  align-items: center;
+  border-top: 1px solid hsla(0, 0%, 48%, 0.342);
+}
+.down-card .left span{
+  color: hsl(0, 0%, 48%);
+}
+
+/* cards */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -75,7 +151,42 @@ header {
   justify-content: space-between;
   padding: 1rem;
 }
-
+.switch{
+  background-color:hsla(0, 5%, 85%, 0.363);
+  color: hsl(0, 2%, 62%);
+  padding: 1rem 2rem 1rem 4rem;
+  text-decoration: none;
+  border: 0;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: 400ms ease;
+  position: relative;
+  text-align: center;
+}
+.switch:hover{
+  color: hsl(176, 72%, 28%);
+}
+.bookmark{
+  position: absolute;
+  top: -1.5px;
+  left: 0;
+}
+.switch .bookmark g circle{
+  transition: 400ms ease;
+}
+.switch:hover .bookmark g circle{
+  fill:hsl(176, 72%, 28%);
+}
+.switch:hover .bookmark-inside{
+  fill:hsl(0, 0%, 100%);
+}
+.switch .bookmark-inside{
+  transition: 400ms ease;
+}
+path[Attributes] {
+  fill: rgb(109, 67, 67);
+  
+}
 /* intro */
 
 /* progress */
@@ -286,5 +397,30 @@ p, .amount-left span {
 }
 .btn-out:hover{
     background-color: hsl(0, 0%, 48%);
+}
+.py-b{
+    padding-bottom: 1rem;
+}
+.btn-2{
+  background-color: hsl(176, 50%, 47%);
+  color: white;
+  padding: 0.8em 1.5rem;
+  text-decoration: none;
+  border: 0;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: 400ms;
+}
+.input-p{
+  height: 36.31px;
+  width: 96px;
+  border-radius: 25px;
+  border: 1px solid hsl(0, 0%, 48%);
+  margin-right: 0.5rem;
+  outline: none;
+  padding: 0 0.3rem;
+}
+.hidden{
+  display: none;
 }
 /* utilities */

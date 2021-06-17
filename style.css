@@ -34,7 +34,7 @@ body {
   font-size: 0.8rem;
 }
 .back-tiers{
-  
+  display: block;
   position: absolute;
   transform: translate(46.5%, 40%);
   z-index: 1;
@@ -166,6 +166,13 @@ header {
 .switch:hover{
   color: hsl(176, 72%, 28%);
 }
+.active{
+  fill: hsl(176, 72%, 28%);
+  color: hsl(176, 72%, 28%);
+}
+.active2{
+  fill:white;
+}
 .bookmark{
   position: absolute;
   top: -1.5px;
@@ -183,10 +190,7 @@ header {
 .switch .bookmark-inside{
   transition: 400ms ease;
 }
-path[Attributes] {
-  fill: rgb(109, 67, 67);
-  
-}
+
 /* intro */
 
 /* progress */

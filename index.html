@@ -36,7 +36,7 @@
           
           <div class="upper-card">
             <div class="left">
-              <input type="radio" name="" id="check-pleige">
+              <input type="radio" name="radio" class="check-pledge">
             </div>
             <div class="right">
               <h3>Pledge with no reward</h3>
@@ -49,7 +49,7 @@
                 <span>enter your pledge</span>
               </div>
               <div class="right">
-                <input type="text" name="" id="" class="input-p">
+                <input type="text" name="" id="paid1" class="input-p">
                 <input type="button" value="continue" class="btn-2">
               </div>
             </div>
@@ -59,7 +59,7 @@
         <div class="card">
           <div class="upper-card">
             <div class="left">
-              <input type="radio" name="" id="check-pledge">
+              <input type="radio" name="radio" class="check-pledge" id="check-1">
             </div>
             <div class="right">
               <div class="header-card">
@@ -81,7 +81,7 @@
                 <span>Enter your pledge</span>
               </div>
               <div class="right">
-                <input type="text" name="$25" placeholder="$25" id="" class="input-p">
+                <input type="text" name="radio" placeholder="$25" id="paid2" class="input-p">
                 <input type="button" value="continue" class="btn-2">
               </div>
             </div>
@@ -92,7 +92,7 @@
 
           <div class="upper-card">
             <div class="left">
-              <input type="radio" name="" class="check-pleige">
+              <input type="radio" name="radio" class="check-pledge" id="check-2">
             </div>
             <div class="right">
               <div class="header-card">
@@ -115,7 +115,7 @@
                 <span>Enter your pledge</span>
               </div>
               <div class="right">
-                <input type="text" name="$75" placeholder="$75" class="input-p">
+                <input type="text" name="$75" placeholder="$75" id="paid3" class="input-p">
                 <input type="button" value="continue" class="btn-2">
               </div>
             </div>
@@ -125,7 +125,7 @@
         <div class="card">
           <div class="upper-card">
             <div class="left">
-              <input type="radio" name="" class="check-pleige">
+              <input type="radio" name="radio" class="check-pledge">
             </div>
             <div class="right">
               <div class="header-card">
@@ -172,7 +172,7 @@
       <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
       <div class="options">
         <a href="#" class="btn">Back this project</a>
-        <a href="#" class="switch"><svg class="bookmark" xmlns="http://www.w3.org/2000/svg" width="56" height="56"><g fill="none" fill-rule="evenodd"><circle fill="hsl(0, 0%, 48%)" cx="28" cy="28" r="28"/><path fill="hsl(0, 2%, 62%)" d="M23 19v18l5-5.058L33 37V19z" class="bookmark-inside"/></g></svg> Bookmark</a>
+        <a href="#" class="switch"><svg class="bookmark" xmlns="http://www.w3.org/2000/svg" width="56" height="56"><g fill="none" fill-rule="evenodd"><circle fill="hsl(0, 0%, 48%)" class="circle" cx="28" cy="28" r="28"/><path fill="hsl(0, 2%, 62%)" d="M23 19v18l5-5.058L33 37V19z" class="bookmark-inside"/></g></svg> Bookmark</a>
         <!-- <a href="#" class="switch"><img src="images/icon-bookmark.svg" alt="" class="bookmark"> Bookmark</a> -->
       </div>
     </section>
@@ -221,7 +221,9 @@
             <div class="amount-left">
               <h1>101</h1><span>left</span>
             </div>
+            <label for="check-1">
             <a href="#" class="btn">Select Reward</a>
+            </label>
           </div>
         </div>
         
@@ -236,7 +238,9 @@
             <div class="amount-left">
               <h1>64</h1><span>left</span>
             </div>
+            <label for="check-2">
             <a href="#" class="btn">Select Reward</a>
+          </label>
             </div>
         </div>
 
@@ -265,5 +269,6 @@
   e.addEventListener('input', () => e.style.setProperty('--value', e.value));
 }
   </script>
+  <script src="script.js"></script>
 </body>
 </html>

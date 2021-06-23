@@ -17,15 +17,17 @@
 <body>
 
 
-  <section class="thanks-card card hidden">
-    <img src="images/icon-check.svg" alt="">
-    <h2>Thanks for your support!</h2>
-    <p>
-      Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
-      an email once our campaign is completed.
-    </p>
-    <a href="#" class="btn btn-1">Got it!</a>
-  </section>
+  <div class="thanks-card-wrapper hidden">
+    <section class="thanks-card card ">
+      <img src="images/icon-check.svg" alt="">
+      <h2>Thanks for your support!</h2>
+      <p>
+        Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
+        an email once our campaign is completed.
+      </p>
+      <a href="#" class="btn btn-1">Got it!</a>
+    </section>
+  </div>
   
   <section class="back-tiers hidden">
     <div class="wrapper ">
@@ -122,7 +124,7 @@
           
         </div>
 
-        <div class="card">
+        <div class="card out">
           <div class="upper-card">
             <div class="left">
               <input type="radio" name="radio" class="check-pledge">
@@ -154,11 +156,24 @@
         <a href="#"><img src="images/logo.svg" alt="" class="logo"></a>
       </div>
       <div class="right">
-        <ul>
+        <ul class="desktop">
           <li><a href="#">About</a></li>
           <li><a href="#">Discover</a></li>
           <li><a href="#">Get Started</a></li>
         </ul>
+        <div class="mobile">
+          <input type="checkbox" name="drop-menu" id="menu-drop">
+          <div class="mobile-m card">
+            <ul class="menu-mobile">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Discover</a></li>
+              <li><a href="#">Get Started</a></li>
+            </ul>
+          </div>
+          <label for="menu-drop">
+          <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF" fill-rule="evenodd"><path d="M0 0h16v3H0zM0 6h16v3H0zM0 12h16v3H0z"/></g></svg>
+          </label>
+        </div>
       </div>
     </nav>
   </header>
@@ -171,7 +186,7 @@
       <h1>Mastercraft Bamboo Monitor Riser</h1>
       <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
       <div class="options">
-        <a href="#" class="btn">Back this project</a>
+        <a href="#" class="btn checks">Back this project</a>
         <a href="#" class="switch"><svg class="bookmark" xmlns="http://www.w3.org/2000/svg" width="56" height="56"><g fill="none" fill-rule="evenodd"><circle fill="hsl(0, 0%, 48%)" class="circle" cx="28" cy="28" r="28"/><path fill="hsl(0, 2%, 62%)" d="M23 19v18l5-5.058L33 37V19z" class="bookmark-inside"/></g></svg> Bookmark</a>
         <svg class="bookmark-2" xmlns="http://www.w3.org/2000/svg" width="56" height="56"><g fill="none" fill-rule="evenodd"><circle fill="hsl(0, 0%, 48%)" class="circle" cx="28" cy="28" r="28"/><path fill="hsl(0, 2%, 62%)" d="M23 19v18l5-5.058L33 37V19z" class="bookmark-inside"/></g></svg>
         <!-- <a href="#" class="switch"><img src="images/icon-bookmark.svg" alt="" class="bookmark"> Bookmark</a> -->

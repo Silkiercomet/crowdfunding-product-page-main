@@ -6,7 +6,7 @@ const downCard = document.querySelectorAll('.down-card');
 const cardShow = document.querySelectorAll('.checks');
 const backTiers = document.querySelector('.back-tiers');
 const thanks = document.querySelectorAll('.btn-2');
-const thanksCard = document.querySelector('.thanks-card');
+const thanksCard = document.querySelector('.thanks-card-wrapper');
 const thanksBtn = document.querySelector('.btn-1')
 
 const toggleButtom = () => {
@@ -37,6 +37,7 @@ options[2].addEventListener("click" , function(){showHidden(2)});
 
 cardShow[0].addEventListener("click" , function(){showCard(backTiers)});
 cardShow[1].addEventListener("click" , function(){showCard(backTiers)});
+cardShow[2].addEventListener("click" , function(){showCard(backTiers)});
 
 thanks[0].addEventListener("click" , function(){showCard(thanksCard);
     showCard(backTiers)});
